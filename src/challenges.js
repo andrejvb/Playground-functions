@@ -1,12 +1,16 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+function compareTrue(param1, param2) {
+  if (param1 === true && param2 === true) {
+    return true;    
+  } return false;
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(param1, param2) {
+  return (param1 * param2) / 2;
 }
+// calcArea(20,10)
+// console.log(area);
 
 // Desafio 3
 function splitSentence() {
