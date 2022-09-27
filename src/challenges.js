@@ -12,10 +12,15 @@ function calcArea(param1, param2) {
 // calcArea(20,10)
 // console.log(area);
 
+
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(param1) {
+ return param1.split(' ');
 }
+
+
+// splitSentence('Hj vai chover');
+// console.log(divisorPal);
 
 // Desafio 4
 function concatName() {
