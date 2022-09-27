@@ -23,9 +23,17 @@ function splitSentence(param1) {
 // console.log(divisorPal);
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+
+function concatName(param1) {
+  return param1[param1.length -1] + ', ' + param1[0]
 }
+
+
+let nomes = ["Andre", "Rapha", "caique", "Ze"];
+concatName(nomes)
+
+console.log(concatName(nomes));
+
 
 // Desafio 5
 function footballPoints() {
