@@ -66,17 +66,67 @@ function footballPoints(wins, ties) {
 // console.log(highestCount("[9, 1, 2, 3, 9, 5, 7]"));
 
 function highestCount(param1) {
-  let numeroMaior = param1[0]
-  for (let index = 0; index < param1.length; index += 1) {
-        if (param1[index] > numeroMaior) {
-      numeroMaior = param1[index]
-    }; return numeroMaior
-      
-  } 
-  console.log(highestCount("[9, 1, 2, 3, 9, 5, 7]"));
+  let numeroMaior = param1[0];
+  let contador = 0;
 
+  for (let index in param1) {
+    if (param1[index] >= numeroMaior) {
+      numeroMaior = param1[index];
+    }
+  }
+
+  for (let index in param1) {
+    if (param1[index] === numeroMaior) {
+      contador += 1;
+    }
+    return contador;
+  }
   
+  
+
+
+
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+
+
+// function highestCount(array) {
+//   let maior = Number.NEGATIVE_INFINITY;
+//   let contador = 0;
+//   for (let number of array){
+//     if (number >= maior){
+//       maior = number;
+//     }
+//   }
+//   for (let number of array){
+//     if (number === maior){
+//       contador += 1;
+//     }
+//   }
+//   return contador;
+// }
+
+function highestCount(array) {
+  let greater;
+  let count = 0;
+
+if (count == 0) {
+  for (let i = 0; i < array.length; i += 1){
+      if (array[i] > array[(i + 1)] ) {
+          greater = array[i];
+      }
+  }
+  for (i = 0; i < array.length; i += 1) {
+      if (greater === array[i]) {
+          count += 1;
+      }
+  }
 }
+
+return count;
+
+
+console.log(highestCount([9, 1, 9, 3, 9, 5, 7]));
+
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
