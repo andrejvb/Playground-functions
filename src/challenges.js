@@ -90,10 +90,10 @@ function highestCount(param1) {
 
         
     if (distancecat1 > distancecat2) {
-      return result = 'cat1';      
+      return result = 'cat2';      
     } 
     else if (distancecat2 > distancecat1) {
-      return result = 'cat2';    
+      return result = 'cat1';    
     } else {
       return result = 'os gatos trombam e o rato foge';
     }
@@ -105,9 +105,28 @@ function highestCount(param1) {
 
 
   // Desafio 8
-  function fizzBuzz() {
-    // seu código aqui
+  function fizzBuzz(num) {
+    let resultfizzBuzz = '';
+
+    for (let index = 0; index < num.length; index += 1) {
+         
+      if (num[index] % 3 === 0 && num[index] % 5 === 0) {
+      resultfizzBuzz = 'fizzBuzz';
+      }
+      else if (num[index] % 3 === 0) {
+        resultfizzBuzz[index] = 'fizz';             
+      }
+      else if (num[index] % 5 ===0) {
+        resultfizzBuzz[index] = 'buzz';        
+      }
+      else {
+        resultfizzBuzz = 'bug!';
+      }
+      return resultfizzBuzz;           
+    }
   }
+  fizzBuzz
+  console.log();
 
   // Desafio 9
   function encode() {
