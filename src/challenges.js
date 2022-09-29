@@ -12,7 +12,6 @@ function calcArea(param1, param2) {
 // calcArea(20,10)
 // console.log(area);
 
-
 // Desafio 3
 function splitSentence(param1) {
   return param1.split(' ');
@@ -30,7 +29,7 @@ function splitSentence(param1) {
 
 function concatName(param1) {
   return param1[param1.length - 1] + ', ' + param1[0]
-}
+};
 
 // let nomes = ["Andre", "Rapha", "Ze"];
 // concatName(nomes)
@@ -38,16 +37,14 @@ function concatName(param1) {
 
 
 // Desafio 5
-
 function footballPoints(wins, ties) {
   return (wins * 3) + (ties * 1);
-}
+};
 
 // console.log(footballPoints(20, 20));
 
 
 // Desafio 6
-
 // function highestCount(param1) {
 //   for (let index = 0; index < param1.length; index += 1) {
 //         if (param1 > param1[index]) {
@@ -78,18 +75,17 @@ function highestCount(param1) {
 }
 
 
-  console.log(highestCount([9, 1, 9, 3, 9, 5, 7]));
-
+  // console.log(highestCount([9, 1, 9, 3, 9, 5, 7]));
 
   // Desafio 7
-  function catAndMouse(mouse, cat1, cat2) {
+function catAndMouse(mouse, cat1, cat2) {
     
-    let distancecat1 = Math.abs (mouse - cat1);
-    let distancecat2 = Math.abs (mouse - cat2);
-    let result = '';
+let distancecat1 = Math.abs (mouse - cat1);
+let distancecat2 = Math.abs (mouse - cat2);
+let result = '';
 
         
-    if (distancecat1 > distancecat2) {
+  if (distancecat1 > distancecat2) {
       return result = 'cat2';      
     } 
     else if (distancecat2 > distancecat1) {
@@ -126,6 +122,7 @@ function highestCount(param1) {
     return resultfizzBuzz; 
   }
 
+// console.log(fizzBuzz([9, 1, 9, 3, 9, 5, 7]));
   
 
   // Desafio 9
